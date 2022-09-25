@@ -9,7 +9,7 @@ const basePage = new BasePage();
 describe('test', ()=>{
     it('First test', () =>{
         cy.visit('https://parabank.parasoft.com/parabank/index.htm')
-        basePage.getHeader().should('be.visible');
+        basePage.getHeaderPanel().should('be.visible');
     })
 
 
