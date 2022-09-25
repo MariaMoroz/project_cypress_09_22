@@ -1,4 +1,5 @@
 class BasePage {
+    
     getImgClear(){
         return cy.get('#topPanel a img.admin');
     }
@@ -127,7 +128,7 @@ class BasePage {
         return cy.get('#footerPanel li a[target="_blank"]');
 
     }
-
 }
 
 export default BasePage;
+
