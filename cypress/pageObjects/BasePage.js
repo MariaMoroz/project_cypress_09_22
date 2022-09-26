@@ -48,38 +48,7 @@ class BasePage {
         return cy.get('ul.button li.contact a');
     }
 
-    getHeaderCustomerLogin(){
-        return cy.get('#leftPanel h2');
-    }
-
-    getLabelUsername(){
-        cy.get('#loginPanel form[name="login"] p:nth-child(1) b');
-    }
-
-    getLabelPassword(){
-        cy.get('#loginPanel form[name="login"] p:nth-child(3) b');
-    }
-
-    getInputFieldUserName(){
-        cy.get('.login input[name="username"]');
-    }
-
-    getInputFieldPassword(){
-        cy.get('.login input[name="password"]');
-    }
-
-    getButtonLogIn(){
-        cy.get('.login input[value="Log In"]');
-    }
-
-    getLinkForgotLogin(){
-        return cy.get('#loginPanel p a[href="lookup.htm"]');
-    }
-
-    getLinkRegister(){
-        return cy.get('#loginPanel p a[href="register.htm"]');
-    }
-
+    
     getFooterMainPanel(){
         return cy.get('#footermainPanel');
     }
