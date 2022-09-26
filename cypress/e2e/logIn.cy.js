@@ -14,6 +14,6 @@ describe('Login',() =>{
         loginPage.setInputUsername();
         loginPage.setInputPassword();
         // loginPage.getButtonLogIn().click();
-
     })
 })
+
