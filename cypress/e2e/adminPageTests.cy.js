@@ -8,7 +8,4 @@ describe('Admin Page elements', ()=>{
         cy.visit('https://parabank.parasoft.com/parabank/admin.htm')
         adminPage.getTitleAdmin().should('be.visible');
     })
-
-
-
 })
