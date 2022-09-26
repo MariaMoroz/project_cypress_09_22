@@ -7,4 +7,9 @@ module.exports = defineConfig({
     },
     baseUrl: 'https://parabank.parasoft.com'
   },
+    video: false,
+    reporter: 'junit',
+    reporterOptions: {
+    mochaFile: 'reports/test-results-[hash].xml',
+  },
 });
