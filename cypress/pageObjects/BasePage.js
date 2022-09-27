@@ -1,101 +1,63 @@
 class BasePage {
     
-    getImgClear(){
-        return cy.get('#topPanel a img.admin');
+    getHeader(){
+        return cy.get('#header');
     }
 
-    getImgLogo(){
-        return cy.get('#topPanel a img.logo');
+    getHeaderText(){
+        return cy.get('#header h1');
     }
 
-    getTextCaption(){
-        return cy.get('#topPanel p');
+    getHeaderSecondText(){
+        return cy.get('#header h2');
     }
 
-    getHeaderPanel(){
-        return cy.get('#headerPanel');
+    getMenuStart(){
+        return cy.get('#menu li a[href="/"]');
     }
 
-    getMenuAboutUs(){
-        return cy.get('ul.leftmenu li a[href="about.htm"]');
+    getMenuBrowseLanguages(){
+        return cy.get('#menu li a[href="/abc.html"]');
     }
 
-    getMenuServices(){
-        return cy.get('ul.leftmenu li a[href="services.htm"]');
+    getMenuSearchLanguages(){
+        return cy.get('#menu li a[href="/search.html"]');
     }
 
-    getMenuProducts(){
-        return cy.get('ul.leftmenu li a[href="http://www.parasoft.com/jsp/products.jsp"]');
+    getMenuTopLists(){
+        return cy.get('#menu li a[href="/toplist.html"]');
     }
 
-    getMenuLocations(){
-        return cy.get('ul.leftmenu li a[href="http://www.parasoft.com/jsp/pr/contacts.jsp"]');
+    getMenuGuestbook(){
+        return cy.get('#menu li a[href="/guestbookv2.html"]');
     }
 
-    getMenuAdminPage(){
-        return cy.get('ul.leftmenu li a[href="admin.htm"]');
+    getMenuSubmitNewLanguage(){
+        return cy.get('#menu li a[href="/submitnewlanguage.html"]');
     }
 
-    getButtonHome(){
-        return cy.get('ul.button li.home a');
+    getFooterMenuStart(){
+        return cy.get('#footer p a[href="/"]');
     }
 
-    getButtonAboutUs(){
-        return cy.get('ul.button li.aboutus a');
+    getFooterMenuBrowseLanguages(){
+        return cy.get('#footer p a[href="/abc.html"]');
     }
 
-    getButtonContact(){
-        return cy.get('ul.button li.contact a');
+    getFooterMenuSearchLanguages(){
+        return cy.get('#footer p a[href="/search.html"]');
     }
 
-    
-    getFooterMainPanel(){
-        return cy.get('#footermainPanel');
+    getFooterMenuTopLists(){
+        return cy.get('#footer p a[href="/toplist.html"]');
     }
 
-    getFooterHomeLink(){
-        return cy.get('#footerPanel li a[href="/parabank/index.htm"]');
+    getFooterMenuGuestbook(){
+        return cy.get('#footer p a[href="/guestbookv2.html"]');
     }
 
-    getFooterAboutLink(){
-        return cy.get('#footerPanel li a[href="/parabank/index.htm"]');
-    }
-
-    getFooterServicesLink(){
-        return cy.get('#footerPanel li a[href="/parabank/index.htm"]');
-    }
-
-    getFooterProductsLink(){
-        return cy.get('#footerPanel li a[href="/parabank/index.htm"]');
-    }
-
-    getFooterLocationsLink(){
-        return cy.get('#footerPanel li a[href="/parabank/index.htm"]');
-    }
-
-    getFooterForumLink(){
-        return cy.get('#footerPanel li a[href="/parabank/index.htm"]');
-    }
-
-    getFooterSiteMapLink(){
-        return cy.get('#footerPanel li a[href="/parabank/index.htm"]');
-    }
-
-    getFooterContactUsLink(){
-        return cy.get('#footerPanel li a[href="/parabank/index.htm"]');
-    }
-
-    getTextCopyright(){
-        return cy.get('#footerPanel p.copyright');
-    }
-
-    getTextVisitUsLabel(){
-        return cy.get('#footerPanel ul.visit li');
-    }
-    
-    getFooterVisitUsLink(){
-        return cy.get('#footerPanel li a[target="_blank"]');
-
+    getFooterMenuSubmitNewLanguage(){
+        return cy.get('#footer p a[href="/submitnewlanguage.html"]');
     }
 }
 
