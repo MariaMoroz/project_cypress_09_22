@@ -1,132 +1,63 @@
 class BasePage {
     
-    getImgClear(){
-        return cy.get('#topPanel a img.admin');
+    getHeader(){
+        return cy.get('#header');
     }
 
-    getImgLogo(){
-        return cy.get('#topPanel a img.logo');
+    getHeaderText(){
+        return cy.get('#header h1');
     }
 
-    getTextCaption(){
-        return cy.get('#topPanel p');
+    getHeaderSecondText(){
+        return cy.get('#header h2');
     }
 
-    getHeaderPanel(){
-        return cy.get('#headerPanel');
+    getMenuStart(){
+        return cy.get('#menu li a[href="/"]');
     }
 
-    getMenuAboutUs(){
-        return cy.get('ul.leftmenu li a[href="about.htm"]');
+    getMenuBrowseLanguages(){
+        return cy.get('#menu li a[href="/abc.html"]');
     }
 
-    getMenuServices(){
-        return cy.get('ul.leftmenu li a[href="services.htm"]');
+    getMenuSearchLanguages(){
+        return cy.get('#menu li a[href="/search.html"]');
     }
 
-    getMenuProducts(){
-        return cy.get('ul.leftmenu li a[href="http://www.parasoft.com/jsp/products.jsp"]');
+    getMenuTopLists(){
+        return cy.get('#menu li a[href="/toplist.html"]');
     }
 
-    getMenuLocations(){
-        return cy.get('ul.leftmenu li a[href="http://www.parasoft.com/jsp/pr/contacts.jsp"]');
+    getMenuGuestbook(){
+        return cy.get('#menu li a[href="/guestbookv2.html"]');
     }
 
-    getMenuAdminPage(){
-        return cy.get('ul.leftmenu li a[href="admin.htm"]');
+    getMenuSubmitNewLanguage(){
+        return cy.get('#menu li a[href="/submitnewlanguage.html"]');
     }
 
-    getButtonHome(){
-        return cy.get('ul.button li.home a');
+    getFooterMenuStart(){
+        return cy.get('#footer p a[href="/"]');
     }
 
-    getButtonAboutUs(){
-        return cy.get('ul.button li.aboutus a');
+    getFooterMenuBrowseLanguages(){
+        return cy.get('#footer p a[href="/abc.html"]');
     }
 
-    getButtonContact(){
-        return cy.get('ul.button li.contact a');
+    getFooterMenuSearchLanguages(){
+        return cy.get('#footer p a[href="/search.html"]');
     }
 
-    getHeaderCustomerLogin(){
-        return cy.get('#leftPanel h2');
+    getFooterMenuTopLists(){
+        return cy.get('#footer p a[href="/toplist.html"]');
     }
 
-    getLabelUsername(){
-        cy.get('#loginPanel form[name="login"] p:nth-child(1) b');
+    getFooterMenuGuestbook(){
+        return cy.get('#footer p a[href="/guestbookv2.html"]');
     }
 
-    getLabelPassword(){
-        cy.get('#loginPanel form[name="login"] p:nth-child(3) b');
-    }
-
-    getInputFieldUserName(){
-        cy.get('.login input[name="username"]');
-    }
-
-    getInputFieldPassword(){
-        cy.get('.login input[name="password"]');
-    }
-
-    getButtonLogIn(){
-        cy.get('.login input[value="Log In"]');
-    }
-
-    getLinkForgotLogin(){
-        return cy.get('#loginPanel p a[href="lookup.htm"]');
-    }
-
-    getLinkRegister(){
-        return cy.get('#loginPanel p a[href="register.htm"]');
-    }
-
-    getFooterMainPanel(){
-        return cy.get('#footermainPanel');
-    }
-
-    getFooterHomeLink(){
-        return cy.get('#footerPanel li a[href="/parabank/index.htm"]');
-    }
-
-    getFooterAboutLink(){
-        return cy.get('#footerPanel li a[href="/parabank/index.htm"]');
-    }
-
-    getFooterServicesLink(){
-        return cy.get('#footerPanel li a[href="/parabank/index.htm"]');
-    }
-
-    getFooterProductsLink(){
-        return cy.get('#footerPanel li a[href="/parabank/index.htm"]');
-    }
-
-    getFooterLocationsLink(){
-        return cy.get('#footerPanel li a[href="/parabank/index.htm"]');
-    }
-
-    getFooterForumLink(){
-        return cy.get('#footerPanel li a[href="/parabank/index.htm"]');
-    }
-
-    getFooterSiteMapLink(){
-        return cy.get('#footerPanel li a[href="/parabank/index.htm"]');
-    }
-
-    getFooterContactUsLink(){
-        return cy.get('#footerPanel li a[href="/parabank/index.htm"]');
-    }
-
-    getTextCopyright(){
-        return cy.get('#footerPanel p.copyright');
-    }
-
-    getTextVisitUsLabel(){
-        return cy.get('#footerPanel ul.visit li');
-    }
-    
-    getFooterVisitUsLink(){
-        return cy.get('#footerPanel li a[target="_blank"]');
-
+    getFooterMenuSubmitNewLanguage(){
+        return cy.get('#footer p a[href="/submitnewlanguage.html"]');
     }
 }
 

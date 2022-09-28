@@ -1,17 +1,16 @@
 /// <reference types="Cypress" />
 
-import BasePage from "../pageObjects/BasePage";
-import HomePage from "../pageObjects/HomePage";
+Cypress.on('uncaught:exception', () => false)
 
-const homePage = new HomePage();
+import BasePage from "../pageObjects/BasePage";
+
 const basePage = new BasePage();
 
 describe('test', ()=>{
+
     it('First test', () =>{
-        cy.visit('https://parabank.parasoft.com/parabank/index.htm')
-        basePage.getHeaderPanel().should('be.visible');
+        cy.visit('/')
+        basePage.getHeaderText().should('be.visible');
     })
-
-
-
 })
+
