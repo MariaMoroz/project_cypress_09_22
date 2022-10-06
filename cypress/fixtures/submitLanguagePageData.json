@@ -1,0 +1,26 @@
+{
+  "inputNames": [
+    "language",
+    "descriptor",
+    "url",
+    "author",
+    "email",
+    "homepage",
+    "captcha",
+    "category",
+    "code",
+    "teammsg"
+  ],
+  "inputValues": [
+    "Javascript",
+    "Some description about JS",
+    "developer.mozilla.org/ru/docs/Web/JavaScript",
+    "safbek",
+    "safbek@list.ru",
+    "none",
+    "notValidCaptcha",
+    "category",
+    "code",
+    "teammsg"
+  ]
+}

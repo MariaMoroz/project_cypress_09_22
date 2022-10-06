@@ -14,7 +14,7 @@ class submitLanguagePage {
         error: () => cy.get('#main > p')
     }
 
-    fillInput (inputName, inputValue) {
+    fillInput(inputName, inputValue) {
         return this.submitLanguagePageSelectors[inputName]().type(inputValue)
     }
 }
