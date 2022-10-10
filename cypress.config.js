@@ -5,7 +5,12 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: 'https://www.99-bottles-of-beer.net',
+    baseUrl: 'https://demo.seat-os.com/',
+  },
+  env: {
+    host: 'https://demo.seat-os.com/',
+    email: 'demo+reseller@seat-os.com',
+    password: '12345678'
   },
     video: false,
     reporter: 'junit',

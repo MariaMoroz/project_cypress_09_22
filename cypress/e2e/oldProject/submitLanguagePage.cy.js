@@ -1,8 +1,8 @@
 /// <reference types="Cypress" />
 
-import submitLanguagePageData from '../fixtures/submitLanguagePageData.json'
+import submitLanguagePageData from '../../fixtures/submitLanguagePageData.json'
 
-import SubmitLanguagePage from "../pageObjects/SubmitLanguagePage"
+import SubmitLanguagePage from "../../pageObjects/oldProjectPages/SubmitLanguagePage"
 
 const submitLanguagePage = new SubmitLanguagePage()
 
@@ -10,7 +10,7 @@ const submitLanguagePage = new SubmitLanguagePage()
 
 describe('SubmitLanguagePage Test', () => {
     beforeEach('Navigate to SubmitLanguagePage', () => {
-        cy.visit('/submitnewlanguage.html')
+        cy.visit('https://www.99-bottles-of-beer.net/submitnewlanguage.html')
     })
 
     it('validate security code input', () => {
