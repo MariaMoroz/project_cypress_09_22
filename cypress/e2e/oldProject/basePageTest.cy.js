@@ -1,12 +1,12 @@
 /// <reference types="Cypress" />
-Cypress.on('uncaught:exception', () => false)
-import BasePage from "../pageObjects/BasePage";
+
+import BasePage from "../../pageObjects/oldProjectPages/BasePage";
 
 const basePage = new BasePage();
 
 describe('Base Page', () => {
     before( () => {
-        cy.visit('/');
+        cy.visit('https://www.99-bottles-of-beer.net');
     });
 
     it('Verify the header is visible on BasePage', () =>{
