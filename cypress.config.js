@@ -7,8 +7,8 @@ module.exports = defineConfig({
     },
   },
   env: {
-    host: 'https://demo.seat-os.com/',
-    email: 'demo+reseller@seat-os.com',
+    host: 'https://qatest.site',
+    email: 'agent@qatest.site',
     password: '12345678'
   },
     video: false,
