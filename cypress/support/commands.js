@@ -25,7 +25,6 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('login', (email, password) => { 
-    cy.visit(Cypress.env('host'));
     cy.get('div.inner a.login').click();
     cy.get('#byemail div.col-sm-6 > input[data-check="email"]').type(email, {force: true});
     cy.get('#byemail input[name="password"]').type(password, {force: true});

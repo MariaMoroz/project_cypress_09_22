@@ -7,7 +7,7 @@ module.exports = defineConfig({
     },
   },
   env: {
-    host: 'https://qatest.site',
+    baseUrl: 'https://qatest.site',
     email: 'agent@qatest.site',
     password: '12345678'
   },
