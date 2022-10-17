@@ -31,14 +31,14 @@ describe('Create booking', () => {
         cy.get('div.calendar-month-wrapper').should('be.visible')
     })  
 
-    it('Verify that user can select month from dropdown menu when Month view option on', () => {
-        //cy.get('select[name="calendar_month"]').select(1)//should be next month
+    xit('Verify that user can select month from dropdown menu when Month view option on', () => {
+        cy.get('select[name="calendar_month"]').select('Dec 2022')//should be next month
         // let text = cy.get('select[name="calendar_month"] option').then(function($option){
         //     //method text to obtain text content
         //     const t = $option.text()
         //     expect(t).to.contains(d.getUTCFullYear())
         // //assertexpected Oct 2022Nov 2022Dec 2022Jan 2023Feb 2023Mar 2023Apr 2023May 2023Jun 2023Jul 2023Aug 2023Sep 2023Oct 2023 to include 2022
-        // })
+         //})
         
     })
 })
