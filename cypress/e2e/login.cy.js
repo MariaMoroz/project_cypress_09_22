@@ -2,7 +2,7 @@
 
 describe('Login page', () => {
     it('verify user can reach login page', () => {
-      cy.visit(Cypress.env('host'));
+      cy.visit(Cypress.env('baseUrl'));
       cy.get('div.inner a.login').click();
       cy.get('div#loginModal h2.text-center').should('have.text', 'Enter QA Test OP');
     })
