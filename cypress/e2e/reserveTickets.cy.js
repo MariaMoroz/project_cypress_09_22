@@ -8,36 +8,17 @@ describe('Bookings page', () => {
     })
 
     it('verify user can reserve a ticket as soon as available', () => {  
-        cy.get('div.day-wrapper').contains('26').then(($el, index) => {
-                cy.wrap($el).click();
+        cy.get('div.day-wrapper').contains('28').then(($el, index) => {
+            cy.wrap($el).click();
         })        
         cy.wait(8000)
         cy.get('div.trip').then((trip) => {
-           
             expect(trip).to.be.visible;
-                
-                const text = trip.find('span.availability').text();
-                if(text.includes('tickets available')){
-                    cy.wrap(trip).eq(0).click()
-                }
-                
-            
+            const text = trip.find('span.availability').text();
+            if(text.includes('tickets available')){
+                cy.wrap(trip).eq(0).click()
+            }  
         })
-                // cy.wait(2000)
-                // cy.get('div.trip').eq(0).then((trip)=> {
-
-                //         const text = trip.find('span.availability').text();
-                //         if(text.includes('tickets available')){
-                            
-                //             cy.wrap(trip).click();
-                //             cy.wrap(trip).should('have.class', 'selected');
-                //         } else if(text.includes('Overdue')){
-                //             $el.eq(index + 1).click()
-
-                //         }
-                // })
-            
-        // })
         
         cy.get('table.seats tr td').each((seats) => {
             if(seats.hasClass('selected')){
@@ -46,7 +27,11 @@ describe('Bookings page', () => {
                 cy.get('ul.dropdown-menu li a.btn-reserve-tickets').click();
                 return false;
             }
-        })  
+        })
+        
+        cy.get('a[href="/orders/"]').click();  
+        cy.get('table#data tbody >tr')
     }) 
+
      
 })
