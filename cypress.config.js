@@ -1,15 +1,15 @@
 const { defineConfig } = require("cypress");
+const dotenvPlugin = require('cypress-dotenv');
+const path = require('path');
 
 module.exports = defineConfig({
+  chromeWebSecurity: false,
+  defaultCommandTimeout: 7000,
   e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
+    setupNodeEvents(on, config) { 
+      config = dotenvPlugin(config, { path: path.join(__dirname, '.env') }, true);
+      return config
     },
-  },
-  env: {
-    baseUrl: 'https://qatest.site',
-    email: 'agent@qatest.site',
-    password: '12345678'
   },
     video: false,
     reporter: 'junit',
